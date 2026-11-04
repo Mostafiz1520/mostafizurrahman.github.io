@@ -1,0 +1,815 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Md. Mostafizur Rahman | Urban Planner & Geospatial Researcher</title>
+
+<meta name="description" content="Professional portfolio of Md. Mostafizur Rahman, Assistant Urban Planner, specializing in Urban Planning, GIS, Remote Sensing, Geospatial Analysis and Research.">
+
+<meta name="author" content="Md. Mostafizur Rahman">
+
+<style>
+
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #292929;
+    background: #ffffff;
+    line-height: 1.8;
+}
+
+a {
+    transition: 0.25s ease;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    padding: 20px 8%;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 28px;
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.97);
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #315c48;
+}
+
+/* =========================
+   HOMEPAGE
+========================= */
+
+.hero {
+    max-width: 1180px;
+    min-height: 78vh;
+    margin: 65px auto;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.content {
+    flex: 1;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #315c48;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 53px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.subtitle {
+    font-size: 19px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.position {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #315c48;
+    margin-top: 12px;
+}
+
+.intro {
+    font-size: 16px;
+    margin-top: 22px;
+    color: #555555;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f1f3f1;
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.social-links a {
+    color: #315c48;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN SECTIONS
+========================= */
+
+section {
+    padding: 75px 10%;
+    border-top: 1px solid #eeeeee;
+}
+
+.section-content {
+    max-width: 1050px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 31px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: #263d32;
+}
+
+section h3 {
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    color: #315c48;
+}
+
+section p {
+    max-width: 950px;
+    color: #555555;
+}
+
+/* =========================
+   INTERESTS & SKILLS
+========================= */
+
+.interests,
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 22px;
+}
+
+.interests span,
+.skills span {
+    padding: 7px 14px;
+    background: #f1f4f1;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #315c48;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-item {
+    border-left: 2px solid #dce6df;
+    padding-left: 22px;
+    margin: 30px 0;
+}
+
+.experience-item h3 {
+    margin-top: 0;
+}
+
+.experience-meta {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #777777;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project {
+    margin: 30px 0;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+    margin-top: 25px;
+}
+
+.contact-info p {
+    margin: 12px 0;
+}
+
+.contact-info a {
+    color: #315c48;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 32px 20px;
+    background: #f8faf8;
+    color: #777777;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width: 750px) {
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px 20px;
+        padding: 17px 5%;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 35px auto;
+        gap: 28px;
+        min-height: auto;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .profile {
+        width: 180px;
+        height: 180px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    section h3 {
+        font-size: 19px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- HOMEPAGE -->
+
+<div class="hero" id="home">
+
+    <div class="content">
+
+        <p class="eyebrow">
+            PROFESSIONAL & RESEARCH PORTFOLIO
+        </p>
+
+        <h1>Md. Mostafizur Rahman</h1>
+
+        <p class="subtitle">
+            Urban Planning | GIS & Remote Sensing |
+            Geospatial Analysis
+        </p>
+
+        <p class="position">
+            Assistant Urban Planner at Sheltech Consultants (Pvt.) Ltd.
+        </p>
+
+        <p class="intro">
+            I am an Urban and Regional Planning graduate
+            from Pabna University of Science and Technology
+            (PUST), Bangladesh, currently working as an
+            Assistant Urban Planner at Sheltech Consultants.
+        </p>
+
+        <p class="intro">
+            My professional and research interests focus on
+            applying GIS, Remote Sensing and geospatial
+            technologies to urban planning, environmental
+            assessment, spatial analysis and sustainable
+            development.
+        </p>
+
+        <div class="social-links">
+
+            <a href="mailto:mostafizur.urp.pust@gmail.com">
+                Email
+            </a>
+
+            <a href="https://github.com/Mostafiz1520"
+               target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/planner-mostafizur-rahman/"
+               target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+    <img src="profile.jpg"
+         class="profile"
+         alt="Md. Mostafizur Rahman">
+
+</div>
+
+
+<!-- ABOUT ME -->
+
+<section id="about">
+
+<div class="section-content">
+
+    <h2>About Me</h2>
+
+    <p>
+        I completed my Bachelor of Urban and Regional
+        Planning (BURP) from the Department of Urban and
+        Regional Planning at Pabna University of Science
+        and Technology, Bangladesh.
+    </p>
+
+    <p>
+        I am interested in understanding urban and
+        environmental challenges through spatial data,
+        research and evidence-based planning. I see GIS
+        and Remote Sensing not merely as mapping tools,
+        but as practical technologies for planning,
+        monitoring and decision-making.
+    </p>
+
+    <p>
+        My academic and professional interests connect
+        urban development, geospatial science,
+        transportation planning, environmental research
+        and spatial data analysis.
+    </p>
+
+    <h3>Research Interests</h3>
+
+    <div class="interests">
+        <span>Geospatial Analysis</span>
+        <span>GIS</span>
+        <span>Remote Sensing</span>
+        <span>Spatial Data Science</span>
+        <span>Environmental Science</span>
+        <span>Urban Planning</span>
+        <span>Transportation Planning</span>
+        <span>Urban Mobility</span>
+        <span>Accessibility Analysis</span>
+        <span>Environmental Monitoring</span>
+        <span>Sustainable Development</span>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- PROFESSIONAL EXPERIENCE -->
+
+<section id="experience">
+
+<div class="section-content">
+
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+
+        <h3>Assistant Urban Planner</h3>
+
+        <p class="experience-meta">
+            Sheltech Consultants (Pvt.) Ltd. | October 2026 – Present
+        </p>
+
+        <p>
+            Working in urban planning consultancy, with
+            involvement in the Improving Urban Governance
+            and Infrastructure Project (IUGIP), supported
+            by LGED and ADB.
+        </p>
+
+        <p>
+            Project: Preparation of Urban Master Plans
+            for 16 Pourashavas.
+        </p>
+
+    </div>
+
+
+    <div class="experience-item">
+
+        <h3>Junior Urban Planner</h3>
+
+        <p class="experience-meta">
+            Development Design Consultants (DDC) | Previous Engagement
+        </p>
+
+        <p>
+            Supported the public hearing process for the
+            draft master plan of Hossainpur Pourashava,
+            Kishoreganj, including communicating planning
+            issues, collecting public comments and
+            supporting documentation.
+        </p>
+
+    </div>
+
+
+    <div class="experience-item">
+
+        <h3>Intern</h3>
+
+        <p class="experience-meta">
+            Sheltech Consultants (Pvt.) Ltd. | August 2026
+        </p>
+
+        <p>
+            Worked on Excel-based analysis and reporting
+            of household transport and socioeconomic survey
+            datasets from municipalities including Hajiganj,
+            Chowmuhani and Sandwip. Also supported drone
+            imagery matching, map-code identification and
+            geographic data preparation.
+        </p>
+
+    </div>
+
+
+    <div class="experience-item">
+
+        <h3>Research Assistant</h3>
+
+        <p class="experience-meta">
+            University Research Project
+        </p>
+
+        <p>
+            Gained research experience in KoboToolbox-based
+            data collection, Focus Group Discussions (FGDs),
+            Key Informant Interviews (KIIs), Participatory
+            Rural Appraisal (PRA), data analysis and
+            research documentation.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- RESEARCH -->
+
+<section id="research">
+
+<div class="section-content">
+
+    <h2>Research & Academic Projects</h2>
+
+    <p>
+        My research interests focus on transportation
+        systems, accessibility, urban development and
+        the application of analytical methods to
+        understand planning challenges.
+    </p>
+
+
+    <div class="project">
+
+        <h3>Undergraduate Thesis</h3>
+
+        <p>
+            <strong>
+                Assessing Passenger Satisfaction and Perceived
+                Accessibility of Metro Rail Transit (MRT) Users
+                in Dhaka: A Study of Travel Behavior and
+                Service Quality.
+            </strong>
+        </p>
+
+        <p>
+            <strong>Study Area:</strong> Dhaka MRT Line-6
+        </p>
+
+        <p>
+            <strong>Research Design:</strong>
+            Passenger intercept survey involving 400
+            respondents across 16 MRT stations.
+        </p>
+
+        <p>
+            <strong>Methodology:</strong>
+            Survey data collection using KoboToolbox,
+            data processing in Microsoft Excel,
+            accessibility assessment and quantitative
+            analysis using PLS-SEM in SmartPLS.
+        </p>
+
+        <p>
+            <strong>Research Focus:</strong>
+            Passenger satisfaction, perceived accessibility,
+            service quality and travel behavior.
+        </p>
+
+    </div>
+
+
+    <div class="project">
+
+        <h3>Geospatial & Environmental Research Interests</h3>
+
+        <p>
+            GIS-based spatial analysis, satellite-based
+            environmental monitoring, land use and land
+            cover assessment, spatial data processing
+            and sustainable urban development.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- TECHNICAL SKILLS -->
+
+<section id="skills">
+
+<div class="section-content">
+
+    <h2>Technical Skills</h2>
+
+    <p>
+        My technical skills cover geospatial analysis,
+        spatial data handling, survey research and
+        quantitative data analysis.
+    </p>
+
+    <h3>GIS & Remote Sensing</h3>
+
+    <div class="skills">
+        <span>ArcGIS 10.8</span>
+        <span>ArcGIS Pro</span>
+        <span>Google Earth Engine</span>
+        <span>ERDAS</span>
+        <span>Google Earth Pro</span>
+        <span>Spatial Data Processing</span>
+        <span>Digitisation</span>
+        <span>KML / KMZ / SHP</span>
+    </div>
+
+
+    <h3>Data Analysis & Research</h3>
+
+    <div class="skills">
+        <span>Microsoft Excel</span>
+        <span>SPSS</span>
+        <span>SmartPLS</span>
+        <span>KoboToolbox</span>
+        <span>Survey Analysis</span>
+        <span>PLS-SEM</span>
+        <span>Research Documentation</span>
+    </div>
+
+
+    <h3>Programming & Data Science</h3>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>Scikit-learn (Learning)</span>
+    </div>
+
+
+    <h3>Office & Communication</h3>
+
+    <div class="skills">
+        <span>Microsoft Word</span>
+        <span>Microsoft Excel</span>
+        <span>PowerPoint</span>
+        <span>Report Writing</span>
+        <span>Presentation</span>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- LEADERSHIP -->
+
+<section id="leadership">
+
+<div class="section-content">
+
+    <h2>Leadership & Activities</h2>
+
+    <div class="experience-item">
+
+        <h3>President — PUST Research Society</h3>
+
+        <p class="experience-meta">
+            Pabna University of Science and Technology
+        </p>
+
+        <p>
+            Currently serving as President of PUST
+            Research Society, contributing to the
+            promotion of research culture, academic
+            collaboration and research-oriented activities
+            among university students.
+        </p>
+
+    </div>
+
+
+    <div class="experience-item">
+
+        <h3>Trainee — Amra Notun Changemaker Program</h3>
+
+        <p class="experience-meta">
+            Pabna Cohort 2025 | Amra Notun Network
+        </p>
+
+        <p>
+            Participated in community-oriented learning
+            and activities focused on identifying
+            community problems, developing solutions
+            and promoting positive social change.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="section-content">
+
+    <h2>Contact</h2>
+
+    <p>
+        I welcome opportunities for professional
+        collaboration, research engagement, academic
+        exchange and geospatial projects.
+    </p>
+
+    <div class="contact-info">
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:mostafizur.urp.pust@gmail.com">
+                mostafizur.urp.pust@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+8801878618750">
+                +880 1878-618750
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://linkedin.com/in/planner-mostafizur-rahman/"
+               target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/planner-mostafizur-rahman
+            </a>
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/Mostafiz1520"
+               target="_blank" rel="noopener noreferrer">
+                github.com/Mostafiz1520
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Md. Mostafizur Rahman. All Rights Reserved.
+    </p>
+
+    <p>
+        Urban Planning | Geospatial Science |
+        Research & Innovation
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
