@@ -1,312 +1,334 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Md. Mostafizur Rahman | Urban Planner & Geospatial Researcher</title>
+<title>Md. Mostafizur Rahman | Research Portfolio</title>
 
-<meta name="description" content="Professional portfolio of Md. Mostafizur Rahman, Assistant Urban Planner, specializing in Urban Planning, GIS, Remote Sensing, Geospatial Analysis and Research.">
+<meta name="description" content="Academic and professional portfolio of Md. Mostafizur Rahman, Urban Planner and Geospatial Researcher.">
 
-<meta name="author" content="Md. Mostafizur Rahman">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
-/* =========================
-   GENERAL SETTINGS
-========================= */
+:root {
+    --ink: #252525;
+    --muted: #666666;
+    --accent: #176b5b;
+    --light: #f7f8f6;
+    --line: #e9ece9;
+    --white: #ffffff;
+}
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+    scroll-padding-top: 90px;
 }
 
 body {
-    margin: 0;
-    font-family: Georgia, serif;
-    color: #292929;
-    background: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    background: var(--white);
     line-height: 1.8;
 }
 
 a {
-    transition: 0.25s ease;
+    color: inherit;
+    text-decoration: none;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAVIGATION */
 
 nav {
-    padding: 20px 8%;
-    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    border-bottom: 1px solid var(--line);
+    padding: 22px 8%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 28px;
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,0.97);
-    z-index: 100;
+    gap: 30px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #333333;
-    font-size: 14px;
+    font-size: 15px;
+    color: #444;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #315c48;
+    color: var(--accent);
 }
 
-/* =========================
-   HOMEPAGE
-========================= */
+/* HERO */
 
 .hero {
-    max-width: 1180px;
-    min-height: 78vh;
-    margin: 65px auto;
-    padding: 40px 30px;
-    display: flex;
+    max-width: 1250px;
+    min-height: 680px;
+    margin: auto;
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
     align-items: center;
     gap: 65px;
 }
 
-.content {
-    flex: 1;
+.eyebrow {
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
-.eyebrow {
-    font-size: 12px;
-    letter-spacing: 3px;
-    color: #315c48;
-    font-family: Arial, sans-serif;
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
 }
 
 h1 {
-    font-size: 53px;
-    font-weight: normal;
+    font-size: clamp(42px, 5vw, 68px);
     line-height: 1.2;
-    margin: 12px 0;
+    margin-bottom: 20px;
 }
 
 .subtitle {
-    font-size: 19px;
-    color: #555555;
-    line-height: 1.6;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    color: var(--muted);
+    margin-bottom: 22px;
 }
 
 .position {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #315c48;
-    margin-top: 12px;
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
 }
 
-.intro {
-    font-size: 16px;
-    margin-top: 22px;
-    color: #555555;
+.hero-description {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #454545;
+    margin-bottom: 18px;
 }
-
-/* =========================
-   PROFILE IMAGE
-========================= */
 
 .profile {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 270px;
+    height: 270px;
     object-fit: cover;
-    border: 5px solid #f1f3f1;
-}
-
-/* =========================
-   SOCIAL LINKS
-========================= */
-
-.social-links {
-    display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
-    margin-top: 28px;
-}
-
-.social-links a {
-    color: #315c48;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* =========================
-   MAIN SECTIONS
-========================= */
-
-section {
-    padding: 75px 10%;
-    border-top: 1px solid #eeeeee;
-}
-
-.section-content {
-    max-width: 1050px;
+    border-radius: 50%;
+    border: 5px solid #f0f3f0;
+    display: block;
     margin: auto;
 }
 
+/* SOCIAL ICONS */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    font-size: 27px;
+    color: #222;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.social-label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 85px 10%;
+    border-top: 1px solid var(--line);
+}
+
+.section-inner {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-label {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
 section h2 {
-    font-size: 31px;
-    font-weight: normal;
-    margin-bottom: 25px;
-    color: #263d32;
+    font-size: 38px;
+    margin-bottom: 28px;
 }
 
 section h3 {
-    font-size: 21px;
-    font-weight: normal;
-    margin-top: 30px;
-    margin-bottom: 8px;
-    color: #315c48;
+    font-size: 23px;
+    margin-bottom: 10px;
 }
 
-section p {
-    max-width: 950px;
-    color: #555555;
+.section-text {
+    max-width: 900px;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 18px;
 }
 
-/* =========================
-   INTERESTS & SKILLS
-========================= */
+/* EXPERIENCE */
 
-.interests,
+.experience-item {
+    border-left: 2px solid var(--accent);
+    padding: 5px 0 10px 25px;
+    margin: 30px 0;
+}
+
+.experience-item .date {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* PROJECTS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+    border: 1px solid var(--line);
+    background: #fff;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.project-type {
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* SKILLS */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 11px;
-    margin-top: 22px;
+    gap: 12px;
 }
 
-.interests span,
 .skills span {
-    padding: 7px 14px;
-    background: #f1f4f1;
-    border-radius: 4px;
-    font-size: 13px;
-    color: #315c48;
+    padding: 9px 17px;
+    background: var(--light);
+    border: 1px solid var(--line);
+    font-size: 14px;
 }
 
-/* =========================
-   EXPERIENCE
-========================= */
+/* LEADERSHIP */
 
-.experience-item {
-    border-left: 2px solid #dce6df;
-    padding-left: 22px;
-    margin: 30px 0;
+.leadership-card {
+    padding: 25px 30px;
+    background: var(--light);
+    border-left: 3px solid var(--accent);
 }
 
-.experience-item h3 {
-    margin-top: 0;
-}
+/* CONTACT */
 
-.experience-meta {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    color: #777777;
-}
-
-/* =========================
-   PROJECTS
-========================= */
-
-.project {
-    margin: 30px 0;
-    padding-bottom: 22px;
-    border-bottom: 1px solid #eeeeee;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-info {
+.contact-list {
     margin-top: 25px;
 }
 
-.contact-info p {
-    margin: 12px 0;
+.contact-list p {
+    margin: 13px 0;
+    color: #555;
 }
 
-.contact-info a {
-    color: #315c48;
-    text-decoration: none;
+.contact-list i {
+    width: 30px;
+    color: var(--accent);
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+.contact-list a:hover {
+    color: var(--accent);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
+    background: #f8f9f8;
+    padding: 30px 7%;
     text-align: center;
-    padding: 32px 20px;
-    background: #f8faf8;
-    color: #777777;
+    color: #777;
     font-size: 13px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+/* RESPONSIVE */
 
-@media(max-width: 750px) {
-
+@media (max-width: 800px) {
     nav {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 13px 20px;
-        padding: 17px 5%;
-    }
-
-    nav a {
-        font-size: 13px;
+        gap: 17px;
+        padding: 18px 5%;
     }
 
     .hero {
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
         text-align: center;
-        margin: 35px auto;
-        gap: 28px;
-        min-height: auto;
+        padding: 65px 7%;
+        gap: 35px;
     }
 
-    h1 {
-        font-size: 37px;
-    }
-
-    .subtitle {
-        font-size: 16px;
+    .hero-image {
+        grid-row: 1;
     }
 
     .profile {
-        width: 180px;
-        height: 180px;
+        width: 190px;
+        height: 190px;
     }
 
     .social-links {
@@ -314,18 +336,35 @@ footer {
     }
 
     section {
-        padding: 55px 7%;
+        padding: 60px 7%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     section h2 {
-        font-size: 27px;
-    }
-
-    section h3 {
-        font-size: 19px;
+        font-size: 32px;
     }
 }
 
+@media (max-width: 450px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
 </style>
 </head>
 
@@ -343,446 +382,232 @@ footer {
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- HERO SECTION -->
 
-<!-- HOMEPAGE -->
+<header class="hero" id="home">
 
-<div class="hero" id="home">
+    <div class="hero-content">
 
-    <div class="content">
-
-        <p class="eyebrow">
-            PROFESSIONAL & RESEARCH PORTFOLIO
-        </p>
+        <p class="eyebrow">Professional & Research Portfolio</p>
 
         <h1>Md. Mostafizur Rahman</h1>
 
         <p class="subtitle">
-            Urban Planning | GIS & Remote Sensing |
-            Geospatial Analysis
+            Urban Planning | GIS & Remote Sensing | Geospatial Analysis
         </p>
 
         <p class="position">
             Assistant Urban Planner at Sheltech Consultants (Pvt.) Ltd.
         </p>
 
-        <p class="intro">
-            I am an Urban and Regional Planning graduate
-            from Pabna University of Science and Technology
-            (PUST), Bangladesh, currently working as an
-            Assistant Urban Planner at Sheltech Consultants.
+        <p class="hero-description">
+            I am an Urban and Regional Planning graduate from
+            Pabna University of Science and Technology (PUST),
+            Bangladesh, currently working as an Assistant Urban
+            Planner at Sheltech Consultants.
         </p>
 
-        <p class="intro">
+        <p class="hero-description">
             My professional and research interests focus on
-            applying GIS, Remote Sensing and geospatial
-            technologies to urban planning, environmental
-            assessment, spatial analysis and sustainable
-            development.
+            applying GIS, Remote Sensing and geospatial technologies
+            to urban planning, environmental assessment, spatial
+            analysis and sustainable development.
         </p>
 
         <div class="social-links">
 
-            <a href="mailto:mostafizur.urp.pust@gmail.com">
-                Email
+            <a href="cv.pdf" target="_blank" title="Curriculum Vitae">
+                <i class="fa-regular fa-file-pdf"></i>
+            </a>
+
+            <a href="mailto:mostafizur.urp.pust@gmail.com"
+               title="Email">
+                <i class="fa-solid fa-envelope"></i>
             </a>
 
             <a href="https://github.com/Mostafiz1520"
-               target="_blank" rel="noopener noreferrer">
-                GitHub
+               target="_blank" rel="noopener"
+               title="GitHub">
+                <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="https://linkedin.com/in/planner-mostafizur-rahman/"
-               target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
+            <!-- Add your actual LinkedIn URL here when available -->
 
         </div>
-
     </div>
 
-    <img src="profile.jpg"
-         class="profile"
-         alt="Md. Mostafizur Rahman">
+    <div class="hero-image">
+        <img src="profile.jpg"
+             class="profile"
+             alt="Md. Mostafizur Rahman">
+    </div>
 
-</div>
+</header>
 
-
-<!-- ABOUT ME -->
+<!-- ABOUT -->
 
 <section id="about">
+<div class="section-inner">
 
-<div class="section-content">
-
+    <p class="section-label">Introduction</p>
     <h2>About Me</h2>
 
-    <p>
-        I completed my Bachelor of Urban and Regional
-        Planning (BURP) from the Department of Urban and
-        Regional Planning at Pabna University of Science
-        and Technology, Bangladesh.
+    <p class="section-text">
+        I completed my Bachelor of Urban and Regional Planning (BURP)
+        from the Department of Urban and Regional Planning at
+        Pabna University of Science and Technology, Bangladesh.
     </p>
 
-    <p>
-        I am interested in understanding urban and
-        environmental challenges through spatial data,
-        research and evidence-based planning. I see GIS
-        and Remote Sensing not merely as mapping tools,
-        but as practical technologies for planning,
-        monitoring and decision-making.
+    <p class="section-text">
+        I am interested in using geospatial technologies as practical
+        tools for planning, monitoring, environmental assessment and
+        evidence-based decision-making. My academic and professional
+        interests connect urban development, environmental science,
+        spatial analysis and transportation planning.
     </p>
-
-    <p>
-        My academic and professional interests connect
-        urban development, geospatial science,
-        transportation planning, environmental research
-        and spatial data analysis.
-    </p>
-
-    <h3>Research Interests</h3>
-
-    <div class="interests">
-        <span>Geospatial Analysis</span>
-        <span>GIS</span>
-        <span>Remote Sensing</span>
-        <span>Spatial Data Science</span>
-        <span>Environmental Science</span>
-        <span>Urban Planning</span>
-        <span>Transportation Planning</span>
-        <span>Urban Mobility</span>
-        <span>Accessibility Analysis</span>
-        <span>Environmental Monitoring</span>
-        <span>Sustainable Development</span>
-    </div>
 
 </div>
-
 </section>
 
-
-<!-- PROFESSIONAL EXPERIENCE -->
+<!-- EXPERIENCE -->
 
 <section id="experience">
+<div class="section-inner">
 
-<div class="section-content">
-
-    <h2>Professional Experience</h2>
+    <p class="section-label">Professional Journey</p>
+    <h2>Experience</h2>
 
     <div class="experience-item">
-
+        <p class="date">Current Position</p>
         <h3>Assistant Urban Planner</h3>
-
-        <p class="experience-meta">
-            Sheltech Consultants (Pvt.) Ltd. | October 2026 – Present
+        <p class="section-text">
+            Sheltech Consultants (Pvt.) Ltd.
         </p>
-
-        <p>
-            Working in urban planning consultancy, with
-            involvement in the Improving Urban Governance
-            and Infrastructure Project (IUGIP), supported
-            by LGED and ADB.
+        <p class="section-text">
+            Working in the field of urban planning and professional
+            planning practice.
         </p>
-
-        <p>
-            Project: Preparation of Urban Master Plans
-            for 16 Pourashavas.
-        </p>
-
-    </div>
-
-
-    <div class="experience-item">
-
-        <h3>Junior Urban Planner</h3>
-
-        <p class="experience-meta">
-            Development Design Consultants (DDC) | Previous Engagement
-        </p>
-
-        <p>
-            Supported the public hearing process for the
-            draft master plan of Hossainpur Pourashava,
-            Kishoreganj, including communicating planning
-            issues, collecting public comments and
-            supporting documentation.
-        </p>
-
-    </div>
-
-
-    <div class="experience-item">
-
-        <h3>Intern</h3>
-
-        <p class="experience-meta">
-            Sheltech Consultants (Pvt.) Ltd. | August 2026
-        </p>
-
-        <p>
-            Worked on Excel-based analysis and reporting
-            of household transport and socioeconomic survey
-            datasets from municipalities including Hajiganj,
-            Chowmuhani and Sandwip. Also supported drone
-            imagery matching, map-code identification and
-            geographic data preparation.
-        </p>
-
-    </div>
-
-
-    <div class="experience-item">
-
-        <h3>Research Assistant</h3>
-
-        <p class="experience-meta">
-            University Research Project
-        </p>
-
-        <p>
-            Gained research experience in KoboToolbox-based
-            data collection, Focus Group Discussions (FGDs),
-            Key Informant Interviews (KIIs), Participatory
-            Rural Appraisal (PRA), data analysis and
-            research documentation.
-        </p>
-
     </div>
 
 </div>
-
 </section>
-
 
 <!-- RESEARCH -->
 
 <section id="research">
+<div class="section-inner">
 
-<div class="section-content">
+    <p class="section-label">Academic Work</p>
+    <h2>Research Projects</h2>
 
-    <h2>Research & Academic Projects</h2>
+    <div class="project-grid">
 
-    <p>
-        My research interests focus on transportation
-        systems, accessibility, urban development and
-        the application of analytical methods to
-        understand planning challenges.
-    </p>
+        <div class="project-card">
+            <p class="project-type">Undergraduate Thesis</p>
+            <h3>Passenger Satisfaction and Perceived Accessibility of Metro Rail Transit Users in Dhaka</h3>
+            <p>
+                A study of travel behavior and service quality,
+                focusing on passenger satisfaction, perceived
+                accessibility and urban public transportation.
+            </p>
+            <p style="margin-top:15px;">
+                <strong>Research Area:</strong> Transportation Planning,
+                Public Transport, Accessibility and Travel Behavior.
+            </p>
+        </div>
 
-
-    <div class="project">
-
-        <h3>Undergraduate Thesis</h3>
-
-        <p>
-            <strong>
-                Assessing Passenger Satisfaction and Perceived
-                Accessibility of Metro Rail Transit (MRT) Users
-                in Dhaka: A Study of Travel Behavior and
-                Service Quality.
-            </strong>
-        </p>
-
-        <p>
-            <strong>Study Area:</strong> Dhaka MRT Line-6
-        </p>
-
-        <p>
-            <strong>Research Design:</strong>
-            Passenger intercept survey involving 400
-            respondents across 16 MRT stations.
-        </p>
-
-        <p>
-            <strong>Methodology:</strong>
-            Survey data collection using KoboToolbox,
-            data processing in Microsoft Excel,
-            accessibility assessment and quantitative
-            analysis using PLS-SEM in SmartPLS.
-        </p>
-
-        <p>
-            <strong>Research Focus:</strong>
-            Passenger satisfaction, perceived accessibility,
-            service quality and travel behavior.
-        </p>
-
-    </div>
-
-
-    <div class="project">
-
-        <h3>Geospatial & Environmental Research Interests</h3>
-
-        <p>
-            GIS-based spatial analysis, satellite-based
-            environmental monitoring, land use and land
-            cover assessment, spatial data processing
-            and sustainable urban development.
-        </p>
+        <div class="project-card">
+            <p class="project-type">Research Interests</p>
+            <h3>Geospatial Applications for Planning</h3>
+            <p>
+                Exploring GIS-based spatial analysis, Remote Sensing,
+                environmental monitoring, land use and land cover
+                assessment, and sustainable urban development.
+            </p>
+        </div>
 
     </div>
 
 </div>
-
 </section>
 
-
-<!-- TECHNICAL SKILLS -->
+<!-- SKILLS -->
 
 <section id="skills">
+<div class="section-inner">
 
-<div class="section-content">
-
-    <h2>Technical Skills</h2>
-
-    <p>
-        My technical skills cover geospatial analysis,
-        spatial data handling, survey research and
-        quantitative data analysis.
-    </p>
-
-    <h3>GIS & Remote Sensing</h3>
+    <p class="section-label">Areas of Interest</p>
+    <h2>Research & Technical Interests</h2>
 
     <div class="skills">
-        <span>ArcGIS 10.8</span>
-        <span>ArcGIS Pro</span>
-        <span>Google Earth Engine</span>
-        <span>ERDAS</span>
-        <span>Google Earth Pro</span>
-        <span>Spatial Data Processing</span>
-        <span>Digitisation</span>
-        <span>KML / KMZ / SHP</span>
-    </div>
-
-
-    <h3>Data Analysis & Research</h3>
-
-    <div class="skills">
-        <span>Microsoft Excel</span>
-        <span>SPSS</span>
-        <span>SmartPLS</span>
-        <span>KoboToolbox</span>
-        <span>Survey Analysis</span>
-        <span>PLS-SEM</span>
-        <span>Research Documentation</span>
-    </div>
-
-
-    <h3>Programming & Data Science</h3>
-
-    <div class="skills">
-        <span>Python</span>
-        <span>NumPy</span>
-        <span>Pandas</span>
-        <span>Scikit-learn (Learning)</span>
-    </div>
-
-
-    <h3>Office & Communication</h3>
-
-    <div class="skills">
-        <span>Microsoft Word</span>
-        <span>Microsoft Excel</span>
-        <span>PowerPoint</span>
-        <span>Report Writing</span>
-        <span>Presentation</span>
+        <span>GIS</span>
+        <span>Remote Sensing</span>
+        <span>Geospatial Analysis</span>
+        <span>Spatial Data Analysis</span>
+        <span>Environmental Science</span>
+        <span>Environmental Monitoring</span>
+        <span>Urban Planning</span>
+        <span>Transportation Planning</span>
+        <span>Land Use & Land Cover</span>
+        <span>Sustainable Development</span>
     </div>
 
 </div>
-
 </section>
-
 
 <!-- LEADERSHIP -->
 
 <section id="leadership">
+<div class="section-inner">
 
-<div class="section-content">
-
+    <p class="section-label">Academic Engagement</p>
     <h2>Leadership & Activities</h2>
 
-    <div class="experience-item">
-
+    <div class="leadership-card">
         <h3>President — PUST Research Society</h3>
-
-        <p class="experience-meta">
-            Pabna University of Science and Technology
+        <p class="section-text">
+            Serving as President of PUST Research Society,
+            promoting research culture, academic collaboration
+            and research-oriented activities among university students.
         </p>
-
-        <p>
-            Currently serving as President of PUST
-            Research Society, contributing to the
-            promotion of research culture, academic
-            collaboration and research-oriented activities
-            among university students.
-        </p>
-
-    </div>
-
-
-    <div class="experience-item">
-
-        <h3>Trainee — Amra Notun Changemaker Program</h3>
-
-        <p class="experience-meta">
-            Pabna Cohort 2025 | Amra Notun Network
-        </p>
-
-        <p>
-            Participated in community-oriented learning
-            and activities focused on identifying
-            community problems, developing solutions
-            and promoting positive social change.
-        </p>
-
     </div>
 
 </div>
-
 </section>
-
 
 <!-- CONTACT -->
 
 <section id="contact">
+<div class="section-inner">
 
-<div class="section-content">
-
+    <p class="section-label">Get in Touch</p>
     <h2>Contact</h2>
 
-    <p>
-        I welcome opportunities for professional
-        collaboration, research engagement, academic
-        exchange and geospatial projects.
+    <p class="section-text">
+        Feel free to contact me for academic collaboration,
+        research opportunities and professional inquiries.
     </p>
 
-    <div class="contact-info">
+    <div class="contact-list">
 
         <p>
-            <strong>Email:</strong>
+            <i class="fa-solid fa-envelope"></i>
             <a href="mailto:mostafizur.urp.pust@gmail.com">
                 mostafizur.urp.pust@gmail.com
             </a>
         </p>
 
         <p>
-            <strong>Phone:</strong>
+            <i class="fa-solid fa-phone"></i>
             <a href="tel:+8801878618750">
                 +880 1878-618750
             </a>
         </p>
 
         <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://linkedin.com/in/planner-mostafizur-rahman/"
-               target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/planner-mostafizur-rahman
-            </a>
-        </p>
-
-        <p>
-            <strong>GitHub:</strong>
+            <i class="fa-brands fa-github"></i>
             <a href="https://github.com/Mostafiz1520"
-               target="_blank" rel="noopener noreferrer">
+               target="_blank" rel="noopener">
                 github.com/Mostafiz1520
             </a>
         </p>
@@ -790,23 +615,13 @@ footer {
     </div>
 
 </div>
-
 </section>
-
 
 <!-- FOOTER -->
 
 <footer>
-
-    <p>
-        © 2026 Md. Mostafizur Rahman. All Rights Reserved.
-    </p>
-
-    <p>
-        Urban Planning | Geospatial Science |
-        Research & Innovation
-    </p>
-
+    <p>© 2026 Md. Mostafizur Rahman. All Rights Reserved.</p>
+    <p>Urban Planning | Geospatial Science | Research</p>
 </footer>
 
 </body>
